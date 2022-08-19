@@ -61,7 +61,9 @@
         <div class="bg-image">
           <div class="container">
             <h1 class="index-h1">Ефективні рішення для вашого бізнесу</h1>
-            <button data-modal-open class="order-button" type="button">Замовити послугу</button>
+            <button data-modal-open class="order-button" type="button">
+              Замовити послугу
+            </button>
           </div>
         </div>
       </section>
@@ -410,6 +412,7 @@
             </ul>
           </address>
         </div>
+        <!-- Footer links -->
         <div class="footer-links">
           <h3 class="footer-links-title">приєднуйтесь</h3>
           <ul class="social footer-social list">
@@ -443,25 +446,80 @@
             </li>
           </ul>
         </div>
+        <!-- Footer subscribe-->
+        <form class="footer-form">
+          <label class="footer-links-title" for="subscribe"
+            >Підпишіться на розсилку</label
+          >
+          <div>
+            <input
+              class="footer-subscribe-input"
+              placeholder="E-mail"
+              type="email"
+              name="subscribe"
+              id="subscribe"
+            />
+            <button class="subscribe-btn" type="submit">Підписатися</button>
+          </div>
+        </form>
       </div>
     </footer>
     <!-- Backdrop and modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form action="">
-          <h4>Залиште свої дані, ми вам передзвонимо</h4>
-          <label for="name">Ім'я</label>
-          <input type="text" name="name" id="name">
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel">
-          <label for="email">Пошта</label>
-          <input type="email" name="" id="email">
-          <label for="text">Коментар</label>
-          <textarea name="" id="text" cols="30" rows="10"></textarea>
-          <button type="submit">Відправити</button>
-        </form>
         <button type="button" data-modal-close class="modal-close-btn"></button>
-        
+        <form class="form">
+          <span class="form-title">Залиште свої дані, ми вам передзвонимо</span>
+          <div class="form-field">
+            <label class="form-label" for="name">Ім'я</label>
+            <input class="form-input" type="text" name="name" id="name" />
+            <svg class="form-icon" width="12" height="12">
+              <use href="./images/sprite.svg#name"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" name="tel" id="tel" />
+            <svg class="form-icon" width="12" height="12">
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="email">Пошта</label>
+            <input class="form-input" type="email" name="email" id="email" />
+            <svg class="form-icon" width="12" height="12">
+              <use href="./images/sprite.svg#mail"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="comment">Коментар </label>
+            <textarea
+              class="form-input form-input-textarea"
+              name="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введіть текст"
+              id="comment"
+            ></textarea>
+          </div>
+          <div class="form-field form-field-policy">
+            <label class="form-label-policy" for="policy">
+              <input
+                class="form-input-policy"
+                type="checkbox"
+                name="policy"
+                id="policy"
+              />
+              <span class="policy-icon"></span>
+              Погоджуюся з розсилкою та приймаю
+              <a class="policy-link" href="#">Умови договору</a>
+            </label>
+          </div>
+          <button class="submit-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <!-- Connect modal.js -->
